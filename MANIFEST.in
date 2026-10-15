@@ -1,0 +1,8 @@
+include COPYING.ViennaRNA NOTICE README.md
+recursive-include native *.c *.h *.ggo
+exclude rnaduplex_optimized/_RNAduplex_2_7_2
+global-exclude *.so *.py[cod] *.o *.a
+prune build
+prune dist
+prune tests
+prune tools

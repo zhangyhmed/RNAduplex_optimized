@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "RNAduplex_optimized"
+version = "0.1.0"
+description = "Exact native RNAduplex 2.7.2-compatible duplex predictions"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "LicenseRef-ViennaRNA"
+license-files = ["COPYING.ViennaRNA", "NOTICE"]
+
+[project.scripts]
+RNAduplex_optimized = "rnaduplex_optimized.cli:main"
+
+[tool.setuptools]
+packages = ["rnaduplex_optimized"]
+

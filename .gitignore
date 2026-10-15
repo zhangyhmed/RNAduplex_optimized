@@ -1,0 +1,31 @@
+# Python caches and build products
+__pycache__/
+*.py[cod]
+*.so
+*.o
+*.a
+*.egg-info/
+.eggs/
+/build/
+/dist/
+/rnaduplex_optimized/_RNAduplex_2_7_2
+
+# Local environments and editor files
+.venv/
+venv/
+.env
+.vscode/
+.idea/
+.DS_Store
+
+# Local validation, datasets, and experimental artifacts
+/tests/
+/tools/
+/data/
+/experiments/
+/reports/
+/helper_work/
+.pytest_cache/
+.coverage
+htmlcov/
+*.log

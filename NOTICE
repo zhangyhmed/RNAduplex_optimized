@@ -1,0 +1,19 @@
+RNAduplex_optimized is derived in part from ViennaRNA 2.7.2.
+Credit: Ivo L. Hofacker and the ViennaRNA contributors, Institute for Theoretical
+Chemistry, University of Vienna. Upstream: https://www.tbi.univie.ac.at/RNA/
+
+Pinned upstream archive:
+https://www.tbi.univie.ac.at/RNA/download/sourcecode/2_7_x/ViennaRNA-2.7.2.tar.gz
+SHA-256: 1ab5f4a4f76fc85a2243546088e45f5d85f2d7a56cc656e969b005cce9bfab5f
+
+Copied/modified: native/core.c (duplex.c, symbol isolation, integer observation,
+compatible-position indexing, exact generic-loop factoring, position/storage
+layout, process-owned reusable workspace, algebraic density dispatch and loop
+control, parameter-derived conservative loop-energy bounds and suffix-block pruning with unchanged traceback); native/energy.h (exact internal/exterior energy specialization derived
+from eval_internal.c and eval_exterior.c).
+Copied unchanged: native/upstream/RNAduplex.c, RNAduplex_cmdl.c/h,
+RNAduplex.ggo, gengetopt_helpers.h, ViennaRNA/intern/color_output.h.
+
+The extension and packaged fallback executable statically link the existing
+ViennaRNA 2.7.2 RNAlib. See COPYING.ViennaRNA for its redistribution terms.
+This distribution does not relicense upstream code under MIT or BSD terms.
